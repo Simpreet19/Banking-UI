@@ -1,0 +1,97 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e0f7fa;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Card */
+.card {
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 320px;
+}
+
+/* Heading */
+.card h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #00796b;
+}
+
+/* Account Number */
+.account {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Balance */
+.balance {
+  font-size: 28px;
+  color: #43a047;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deposit {
+  background-color: #00796b;
+}
+
+.deposit:hover {
+  background-color: #004d40;
+}
+
+.withdraw {
+  background-color: #d32f2f;
+}
+
+.withdraw:hover {
+  background-color: #9a0007;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
+}
